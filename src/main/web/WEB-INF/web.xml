@@ -3,7 +3,7 @@
 <web-app>
     <servlet>
         <servlet-name>index</servlet-name>
-        <servlet-class>krayPro.krayPro.servlets.IndexServlet</servlet-class>
+        <servlet-class>ru.krayPro.servlets.IndexServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>index</servlet-name>

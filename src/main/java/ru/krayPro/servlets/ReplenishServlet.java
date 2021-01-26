@@ -1,5 +1,6 @@
 package ru.krayPro.servlets;
 
+import lombok.extern.slf4j.Slf4j;
 import ru.krayPro.beans.Account;
 import ru.krayPro.daos.AccountDAO;
 import ru.krayPro.enums.AccountInfo;
@@ -7,6 +8,7 @@ import ru.krayPro.enums.ClientCredential;
 import ru.krayPro.enums.Page;
 import ru.krayPro.utils.ServletUtil;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +16,8 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Сервлет для обработки пополнения счета
  */
+@Slf4j
+@WebServlet(name="replenish", urlPatterns ="/replenish")
 public class ReplenishServlet extends HttpServlet {
 
     /**
