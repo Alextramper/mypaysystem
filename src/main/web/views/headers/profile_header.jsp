@@ -15,7 +15,7 @@
             </form>
         </td>
         <td align="right">
-            <form id="profileForm" action="enterSystem.jsp" method="post">
+            <form id="profileForm" action="../enterSystem.jsp" method="post">
                 <input id="profileButton" type="submit" name="profileButton" value="В систему" style="..."/>
             </form>
         </td>

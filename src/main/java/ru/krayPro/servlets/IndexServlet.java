@@ -1,4 +1,5 @@
 package ru.krayPro.servlets;
+
 import lombok.extern.slf4j.Slf4j;
 import ru.krayPro.enums.FormParameter;
 import ru.krayPro.enums.Page;
@@ -15,15 +16,14 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 @WebServlet(name="index", urlPatterns = "/index")
 public class IndexServlet extends HttpServlet {
-
     /**
      * Метод для обработки запроса
      * @param httpServletRequest запрос
      * @param httpServletResponse ответ
+     * pageCommand
      */
     @Override
     protected void doPost(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-        System.out.println("doPost method running");
         String enterCommand = httpServletRequest.getParameter(FormParameter.ENTER_PARAMETER.getFormParameter());
         String regCommand = httpServletRequest.getParameter(FormParameter.REG_PARAMETER.getFormParameter());
         String pageCommand = Page.INDEX_PAGE.getPage();
@@ -35,3 +35,4 @@ public class IndexServlet extends HttpServlet {
         ServletUtil.redirectInsideServlet(httpServletRequest, httpServletResponse, pageCommand);
     }
 }
+

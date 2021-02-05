@@ -25,7 +25,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * Сервлет для страницы регистрации
  */
 @Slf4j
-@WebServlet(name= "regClient", urlPatterns = "/regClient")
+@WebServlet(name="regClient", urlPatterns ="/regClient")
 public class RegClientServlet extends HttpServlet {
 
     /**

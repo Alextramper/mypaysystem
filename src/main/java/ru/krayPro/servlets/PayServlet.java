@@ -26,7 +26,7 @@ public class PayServlet extends HttpServlet {
         String payTargetCount = httpServletRequest.getParameter("payTargetCount");
         String paySum = httpServletRequest.getParameter("paySum");
         PayDataDAO payDataDAO = new PayDataDAO();
-        //TODO
+        //TODO аписать логику возврата ответной страницы
         Client client = new Client();
         client.setId(1);
         PayData payData = new PayData(client, payTargetCount, Integer.parseInt(paySum), new Date());

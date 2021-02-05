@@ -19,10 +19,8 @@ public class ServletUtil {
      * @param httpServletResponse ответ
      * @param pageCommand страница
      */
-    public static void redirectInsideServlet(
-            HttpServletRequest httpServletRequest,
-            HttpServletResponse httpServletResponse,
-            String pageCommand) {
+    public static void redirectInsideServlet(HttpServletRequest httpServletRequest,
+                                             HttpServletResponse httpServletResponse, String pageCommand) {
         try {
             httpServletResponse.sendRedirect(httpServletRequest.getContextPath() + pageCommand);
         } catch (IOException e) {
